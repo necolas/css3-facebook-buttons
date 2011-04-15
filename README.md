@@ -10,12 +10,6 @@ To create the default "button" add a class of `uibutton` to any appropriate elem
     <button class="uibutton" type="submit">Button</button>
     <input class="uibutton" type="submit" value="Button">
 
-## Buttons with dangerous actions ##
-
-If you have a button that triggers a dangerous action, like deleting data, this can be indicated by adding the class `danger`.
-
-    <a href="#" class="button danger">Delete post</a>
-
 ## Larger buttons ##
 
 To create larger buttons include an additional class of `large`
