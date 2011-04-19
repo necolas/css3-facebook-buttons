@@ -55,7 +55,7 @@ http://github.com/necolas/css3-facebook-buttons
 /* overrides extra padding on button elements in Firefox */
 .uibutton::-moz-focus-inner {
     padding: 0;
-	border: 0;
+    border: 0;
 }
 
 /* ............................................................................................................. Icons */
