@@ -82,13 +82,13 @@ http://github.com/necolas/css3-facebook-buttons
 /* ............................................................................................................. Large */
 
 .uibutton.large {
-    font-size:13px;
+    font-size: 13px;
 }
 
 /* ............................................................................................................. Submit, etc */
 
 .uibutton.confirm {
-    border-color: #29447E #29447E #1A356E;
+    border-color: #29447e #29447e #1a356e;
     color: #fff;
     background-color: #5B74A8;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#637bad), to(#5872a7));
@@ -115,7 +115,7 @@ http://github.com/necolas/css3-facebook-buttons
 .uibutton.special {
     border-color: #3b6e22 #3b6e22 #2c5115;
     color: #fff;
-    background-color: #69A74E;
+    background-color: #69a74e;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#75ae5c), to(#67a54b));
     background-image: -moz-linear-gradient(#75ae5c, #67a54b);
     background-image: -o-linear-gradient(#75ae5c, #67a54b);
@@ -127,7 +127,7 @@ http://github.com/necolas/css3-facebook-buttons
 }
 
 .uibutton.special:active {
-    border-color: #3B6E22;
+    border-color: #3b6e22;
     background: #609946;
     filter: none;
     -webkit-box-shadow: none;
@@ -135,6 +135,35 @@ http://github.com/necolas/css3-facebook-buttons
     box-shadow: none;
 }
 
+/* ............................................................................................................. Disable */
+
+.uibutton.disable {
+    z-index: 0;
+    border-color: #c8c8c8;
+    color: #b8b8b8;
+    background: #f2f2f2;
+    cursor: default;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.uibutton.confirm.disable {
+    color: #fff;
+    border-color: #94a2bf;
+    background: #adbad4;
+}
+
+.uibutton.special.disable {
+    color: #fff;
+    border-color: #9db791;
+    background: #b4d3a7;
+}
+
+.uibutton.disable.icon:before,
+.uibutton.disable.icon:after {
+    opacity: 0.5;
+}
 
 /* ------------------------------------------------------------------------------------------------------------- BUTTON GROUPS */
 
