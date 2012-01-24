@@ -24,9 +24,9 @@ http://github.com/necolas/css3-facebook-buttons
     color: #333; 
     background-color: #eee;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f5f6f6', EndColorStr='#e4e4e3'); /* for IE 6 - 9 */
-	@include background-image(linear-gradient(#f5f6f6, #e4e4e3));
-	@include box-shadow(0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #fff);
-	zoom: 1; 
+    @include background-image(linear-gradient(#f5f6f6, #e4e4e3));
+    @include box-shadow(0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #fff);
+    zoom: 1; 
     *display: inline; 
 }
 
