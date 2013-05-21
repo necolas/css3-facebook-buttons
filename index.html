@@ -1,0 +1,221 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>CSS3 Facebook Buttons</title> 
+    <meta name="description" content="Using CSS3 to create Facebook-style buttons from links, buttons, and inputs"> 
+    <style>
+        /* ------------------------------------------------------------------------------------------------------------- RESET */
+
+        html, body, div, form, p,
+        code, pre { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
+
+        /* ------------------------------------------------------------------------------------------------------------- BASE */
+        
+        html { font-size:100.01; }
+        body { padding: 80px 0 20px; font: 13px/1.333 "lucida grande", tahoma, sans-serif; color: #333; background: #fff;
+            background: -webkit-linear-gradient(#3B5998 40px, #F6F8FA 40px) no-repeat;
+            background: -moz-linear-gradient(#3B5998 40px, #F6F8FA 40px) no-repeat;
+            background: -o-linear-gradient(#3B5998 40px, #F6F8FA 40px) no-repeat;
+            background: linear-gradient(#3B5998 40px, #F6F8FA 40px) no-repeat;
+            -webkit-background-size: 100% 160px;
+            -moz-background-size: 100% 160px;
+            background-size: 100% 160px;
+        }
+
+        a { color: #980905; }
+        a:hover, a:focus, a:active { text-decoration: none; }
+
+        h1 { margin: 0 0 0.5em; font-size: 28px;  font-weight: normal; }
+        h2 { margin: 0 0 0.75em; font-size: 15px; }
+        p { margin: 0 0 1.333em; }
+        em { font-style: italic; }
+        table { border-collapse: separate; border-spacing: 0; margin:  0; vertical-align: middle; }
+        th { font-weight: bold; }
+        th, td { padding: 5px 25px 5px 5px; text-align: left; vertical-align: middle; }
+        pre, code { font-family: monospace, sans-serif; font-size: 1em; color:#080; }
+
+        /* ------------------------------------------------------------------------------------------------------------- TEMPLATE */
+
+        .container { position:relative; overflow:hidden; width: 600px; padding: 40px 60px; border: 1px solid #ccc; margin: 0 auto; background: #fff; }
+
+        .container pre,
+        .container .prettyprint { padding: 0; border: 0; margin: 0 0 20px; background: #fff; }
+
+        .ribbon { position: absolute; top: -1px; right: -1px; opacity: 0.9; }
+        .ribbon:hover, .ribbon:focus, .ribbon:active { opacity: 1; }
+        .ribbon img { display: block; border: 0; }
+
+        .header { padding-right: 80px; }
+        .header p { font-size: 18px; color: #808080; }
+
+        .section { margin: 40px 0 20px; }
+
+        .example { padding: 20px; border: 1px solid #ccc; margin: 10px -20px 20px; }
+        .example p { margin: 15px 0 0; }
+        .example p:first-child { margin: 0; }
+
+        .footer { margin: 20px 0 50px; font-size: 11px; color: #666; text-align: center; }
+        .footer a { color: #666;} 
+    </style>
+    
+    <link rel="stylesheet" href="fb-buttons.css">
+    
+    <!-- prettyify -->
+    <link rel="stylesheet" href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css"> 
+    <script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script> 
+</head> 
+<body onload="prettyPrint()">
+
+<div class="container">
+    <a class="ribbon" href="http://github.com/necolas/css3-facebook-buttons" target="_blank"><img src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+    
+    <div class="header">
+        <h1>CSS3 Facebook Buttons</h1>
+        <p>The easiest way to make people think: "Wow, this app must be as good as Facebook!".</b></p>
+    </div>
+    
+    <div class="section">
+        <h2>Buttons</h2>
+        <p>To create the default "button" add a class of <code>uibutton</code> to any appropriate element. To create the blue variant include an additional class <code>confirm</code>. To create the green variant include an additional class <code>special</code>.</p>
+
+        <div class="example">
+            <pre class="prettyprint"><code>&lt;a class="uibutton" href="#">Button&lt;/a>
+&lt;button class="uibutton" type="submit">Button&lt;/button>
+&lt;input class="uibutton" type="submit" value="Button">
+</code></pre>
+            <form>
+                <p><a class="uibutton" href="#button">Change picture</a></p>
+                <p><button class="uibutton confirm" type="submit">Log in</button></p>
+                <p><input class="uibutton confirm" type="submit" value="Publish"> <input class="uibutton" type="submit" value="Save as draft"></p>
+                <p><a class="uibutton special" href="#button">Request an invitation</a></p>
+            </form>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Larger buttons</h2>
+        <p>To create larger buttons inclue an additional class of <code>large</code>.</p>
+        
+        <div class="example">
+            <pre class="prettyprint"><code>&lt;a class="uibutton large" href="#">Search&lt;/a></code></pre>
+            <p><a class="uibutton large" href="#button">Search</a></p>
+            <p><a class="uibutton large confirm" href="#button">Share</a></p>
+            <p><a class="uibutton large special" href="#button">Request an invitation</a></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Grouped buttons</h2>
+        <p>To created grouped buttons wrap them in an element, or use a list, given the class <code>uibutton-group</code>.</p>
+        
+        <div class="example">
+<pre class="prettyprint"><code>&lt;div class="uibutton-group">
+    &lt;a class="uibutton" href="#">Dashboard&lt;/a>
+    &lt;a class="uibutton" href="#">Inbox&lt;/a>
+    &lt;a class="uibutton" href="#">Account&lt;/a>
+    &lt;a class="uibutton" href="#">Logout&lt;/a>
+&lt;/div>
+
+&lt;ul class="uibutton-group">
+    &lt;li>&lt;a class="uibutton" href="#">Dashboard&lt;/a>&lt;/li>
+    &lt;li>&lt;a class="uibutton" href="#">Inbox&lt;/a>&lt;/li>
+    &lt;li>&lt;a class="uibutton" href="#">Account&lt;/a>&lt;/li>
+    &lt;li>&lt;a class="uibutton" href="#">Logout&lt;/a>&lt;/li>
+&lt;/ul></code></pre>
+            <div class="uibutton-group">
+                <a href="#button" class="uibutton" href="#button">Dashboard</a>
+                <a href="#button" class="uibutton" href="#button">Inbox</a>
+                <a href="#button" class="uibutton" href="#button">Account</a>
+                <a href="#button" class="uibutton" href="#button">Logout</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Mixed groups</h2>
+        <p>To display a toolbar of buttons and grouped buttons, use a wrapping element given the class <code>uibutton-toolbar</code>.</p>
+        
+        <div class="example">
+<pre class="prettyprint"><code>&lt;div class="<b>uibutton-toolbar</b>">
+    &lt;a class="uibutton" href="#">Mark as unread&lt;/a>
+    
+    &lt;div class="uibutton-group">
+        &lt;a class="uibutton" href="#">Report spam&lt;/a>
+        &lt;a class="uibutton" href="#">Delete&lt;/a>
+    &lt;/div>
+                        
+    &lt;a class="uibutton" href="#">Unsubscribe&lt;/a>
+&lt;/div></code></pre>
+            <div class="uibutton-toolbar">
+                <a class="uibutton" href="#button">Mark as unread</a>
+                
+                <div class="uibutton-group">
+                    <a class="uibutton" href="#button">Report spam</a>
+                    <a class="uibutton" href="#button">Delete</a>
+                </div>
+                
+                <a class="uibutton" href="#button">Unsubscribe</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Buttons with icons</h2>
+        <p>A range of icons can be added (only for links and buttons) by adding a class of <code>icon</code> and any one of the provided icon classes:</p>
+            
+        <div class="example">
+            <pre class="prettyprint"><code>&lt;a class="uibutton icon add" href="#">New message&lt;/a></code></pre>
+            <a class="uibutton icon add" href="#button">New message</a>
+        </div>
+        
+        <div class="example">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Class</th>
+                        <th scope="col">Example</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td scope="row"><code>.edit</code></td>
+                    <td><a class="uibutton icon edit" href="#button">Edit post</a></td>
+                </tr>
+                <tr>
+                    <td scope="row"><code>.add</code></td>
+                    <td><a class="uibutton icon add" href="#button">Add a photo</a></td>
+                </tr>
+                <tr>
+                    <td scope="row"><code>.secure</code></td>
+                    <td><a class="uibutton icon secure" href="#button">Private account</a></td>
+                </tr>
+                <tr>
+                    <td scope="row"><code>.prev</code></td>
+                    <td><a class="uibutton icon prev" href="#button">Back to messages</a></td>
+                </tr>
+                <tr>
+                    <td scope="row"><code>.next</code></td>
+                    <td><a class="uibutton icon next" href="#button">Get more info</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Browser compatibility</h2>
+        <p>Full support: Firefox 3.5+, Google Chrome, Safari 4+, IE 9+, Opera 11.10+.</p>
+        <p><strong>Note:</strong> Some CSS3 enhancements are not supported in older versions of Opera and IE. The use of icons is not supported in IE 6 or IE 7.</p>
+    </div>
+
+    <div class="section">
+        <h2>License</h2>
+        <p>Public domain: <a href="http://unlicense.org/">http://unlicense.org/</a></p>
+    </div>
+</div>
+
+<div class="footer">
+    <a href="http://github.com/necolas/css3-facebook-buttons">CSS3 Facebook Buttons</a> by <a href="http://nicolasgallagher.com">Nicolas Gallagher</a>.
+</div>
+
+</body>
+</html>
