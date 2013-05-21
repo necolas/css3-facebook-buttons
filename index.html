@@ -1,9 +1,9 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-    <meta charset="utf-8"> 
-    <title>CSS3 Facebook Buttons</title> 
-    <meta name="description" content="Using CSS3 to create Facebook-style buttons from links, buttons, and inputs"> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CSS3 Facebook Buttons</title>
+    <meta name="description" content="Using CSS3 to create Facebook-style buttons from links, buttons, and inputs">
     <style>
         /* ------------------------------------------------------------------------------------------------------------- RESET */
 
@@ -11,7 +11,7 @@
         code, pre { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
 
         /* ------------------------------------------------------------------------------------------------------------- BASE */
-        
+
         html { font-size:100.01; }
         body { padding: 80px 0 20px; font: 13px/1.333 "lucida grande", tahoma, sans-serif; color: #333; background: #fff;
             background: -webkit-linear-gradient(#3B5998 40px, #F6F8FA 40px) no-repeat;
@@ -56,25 +56,25 @@
         .example p:first-child { margin: 0; }
 
         .footer { margin: 20px 0 50px; font-size: 11px; color: #666; text-align: center; }
-        .footer a { color: #666;} 
+        .footer a { color: #666;}
     </style>
-    
+
     <link rel="stylesheet" href="fb-buttons.css">
-    
+
     <!-- prettyify -->
-    <link rel="stylesheet" href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css"> 
-    <script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script> 
-</head> 
+    <link rel="stylesheet" href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css">
+    <script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+</head>
 <body onload="prettyPrint()">
 
 <div class="container">
     <a class="ribbon" href="http://github.com/necolas/css3-facebook-buttons" target="_blank"><img src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
-    
+
     <div class="header">
         <h1>CSS3 Facebook Buttons</h1>
         <p>The easiest way to make people think: "Wow, this app must be as good as Facebook!".</b></p>
     </div>
-    
+
     <div class="section">
         <h2>Buttons</h2>
         <p>To create the default "button" add a class of <code>uibutton</code> to any appropriate element. To create the blue variant include an additional class <code>confirm</code>. To create the green variant include an additional class <code>special</code>.</p>
@@ -92,11 +92,11 @@
             </form>
         </div>
     </div>
-    
+
     <div class="section">
         <h2>Larger buttons</h2>
         <p>To create larger buttons inclue an additional class of <code>large</code>.</p>
-        
+
         <div class="example">
             <pre class="prettyprint"><code>&lt;a class="uibutton large" href="#">Search&lt;/a></code></pre>
             <p><a class="uibutton large" href="#button">Search</a></p>
@@ -108,7 +108,7 @@
     <div class="section">
         <h2>Grouped buttons</h2>
         <p>To created grouped buttons wrap them in an element, or use a list, given the class <code>uibutton-group</code>.</p>
-        
+
         <div class="example">
 <pre class="prettyprint"><code>&lt;div class="uibutton-group">
     &lt;a class="uibutton" href="#">Dashboard&lt;/a>
@@ -135,26 +135,26 @@
     <div class="section">
         <h2>Mixed groups</h2>
         <p>To display a toolbar of buttons and grouped buttons, use a wrapping element given the class <code>uibutton-toolbar</code>.</p>
-        
+
         <div class="example">
 <pre class="prettyprint"><code>&lt;div class="<b>uibutton-toolbar</b>">
     &lt;a class="uibutton" href="#">Mark as unread&lt;/a>
-    
+
     &lt;div class="uibutton-group">
         &lt;a class="uibutton" href="#">Report spam&lt;/a>
         &lt;a class="uibutton" href="#">Delete&lt;/a>
     &lt;/div>
-                        
+
     &lt;a class="uibutton" href="#">Unsubscribe&lt;/a>
 &lt;/div></code></pre>
             <div class="uibutton-toolbar">
                 <a class="uibutton" href="#button">Mark as unread</a>
-                
+
                 <div class="uibutton-group">
                     <a class="uibutton" href="#button">Report spam</a>
                     <a class="uibutton" href="#button">Delete</a>
                 </div>
-                
+
                 <a class="uibutton" href="#button">Unsubscribe</a>
             </div>
         </div>
@@ -163,12 +163,12 @@
     <div class="section">
         <h2>Buttons with icons</h2>
         <p>A range of icons can be added (only for links and buttons) by adding a class of <code>icon</code> and any one of the provided icon classes:</p>
-            
+
         <div class="example">
             <pre class="prettyprint"><code>&lt;a class="uibutton icon add" href="#">New message&lt;/a></code></pre>
             <a class="uibutton icon add" href="#button">New message</a>
         </div>
-        
+
         <div class="example">
             <table>
                 <thead>
