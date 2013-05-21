@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS3 Facebook Buttons</title>
+        <meta name="description" content="Using CSS3 to create Facebook-style buttons from links, buttons, and inputs">
+        <style>
+            body { padding: 20px; }
+            a:visited { color: red; }
+        </style>
+        <link rel="stylesheet" href="fb-buttons.css">
+    </head>
+    <body>
+
+        <h2>Default buttons</h2>
+        <p><a class="uibutton" href="#button">Change picture</a></p>
+        <p><input class="uibutton confirm" type="submit" value="Publish"></p>
+        <p><button class="uibutton special">Request an invitation</button></p>
+
+        <h2>Large buttons</h2>
+        <p><a class="uibutton large" href="#button">Change picture</a></p>
+        <p><input class="uibutton large confirm" type="submit" value="Publish"></p>
+        <p><button class="uibutton large special">Request an invitation</button></p>
+
+        <h2>Grouped buttons</h2>
+        <div class="uibutton-group">
+            <a href="#button" class="uibutton">Dashboard</a>
+            <a href="#button" class="uibutton">Inbox</a>
+            <a href="#button" class="uibutton">Account</a>
+            <a href="#button" class="uibutton">Login</a>
+        </div>
+
+        <h2>Mixed groups</h2>
+        <div class="uibutton-toolbar">
+            <a class="uibutton" href="#button">Mark as unread</a>
+
+            <div class="uibutton-group">
+                <a class="uibutton" href="#button">Report spam</a>
+                <a class="uibutton" href="#button">Delete</a>
+            </div>
+
+            <a class="uibutton" href="#button">Unsubscribe</a>
+        </div>
+
+
+        <h2>Buttons with icons</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Class</th>
+                    <th scope="col">Example</th>
+                </tr>
+            </thead>
+            <tr>
+                <td scope="row"><code>.edit</code></td>
+                <td><a class="uibutton icon edit" href="#button">Edit post</a></td>
+            </tr>
+            <tr>
+                <td scope="row"><code>.add</code></td>
+                <td><a class="uibutton icon add" href="#button">Add a photo</a></td>
+            </tr>
+            <tr>
+                <td scope="row"><code>.secure</code></td>
+                <td><a class="uibutton icon secure" href="#button">Private account</a></td>
+            </tr>
+            <tr>
+                <td scope="row"><code>.prev</code></td>
+                <td><a class="uibutton icon prev" href="#button">Back to messages</a></td>
+            </tr>
+            <tr>
+                <td scope="row"><code>.next</code></td>
+                <td><a class="uibutton icon next" href="#button">Get more info</a></td>
+            </tr>
+        </table>
+    </body>
+</html>
