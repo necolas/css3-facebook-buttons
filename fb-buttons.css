@@ -7,7 +7,8 @@ http://github.com/necolas/css3-facebook-buttons
 
 /* ------------------------------------------------------------------------------------------------------------- BUTTON */
 
-.uibutton {
+.uibutton,
+.uibutton:visited {
     position: relative;
     z-index: 1;
     overflow: visible;
