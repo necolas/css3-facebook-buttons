@@ -1,5 +1,7 @@
 # CSS3 Facebook-style Buttons
 
+![unmaintained](http://img.shields.io/badge/status-unmaintained-red.png)
+
 Facebook-style buttons and button groups. Default and large sizes.
 
 ## Buttons
