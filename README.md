@@ -15,7 +15,6 @@ create the green variant include an additional class `special`.
 <button class="uibutton" type="submit">Button</button>
 <input class="uibutton" type="submit" value="Button">
 ```
-
 ## Larger buttons
 
 To create larger buttons include an additional class of `large`
